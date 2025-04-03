@@ -71,11 +71,11 @@ Here are some snapshots of TokGrabber in action:
 	
 	
 ### Single Download Mode
-- **Enter TikTok URL:** Paste a valid TikTok URL.
-- **Fetch Info:** Retrieve video details (title, region, duration) and view the thumbnail.
-- **Download:** Select your desired download type and output directory, then click **Download**. If the file exists, you’ll be prompted to overwrite it.
-- **Pause/Resume:** Control the download process using the **Pause/Resume** button.
-- **Logs & Progress:** Monitor download progress and view detailed logs in real time.
+	- **Enter TikTok URL:** Paste a valid TikTok URL.
+	- **Fetch Info:** Retrieve video details (title, region, duration) and view the thumbnail.
+	- **Download:** Select your desired download type and output directory, then click **Download**. If the file exists, you’ll be prompted to overwrite it.
+	- **Pause/Resume:** Control the download process using the **Pause/Resume** button.
+	- **Logs & Progress:** Monitor download progress and view detailed logs in real time.
 
 ### Batch Download Mode
 - **URLs File:** Provide a text file containing TikTok URLs (one per line).
