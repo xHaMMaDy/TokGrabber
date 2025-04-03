@@ -1,117 +1,99 @@
-# TokGrabber 🚀🎥
+# 🚀 TokGrabber – The Ultimate TikTok Media Downloader 🎥🎶  
 
-![Repo Size](https://img.shields.io/github/repo-size/xHaMMaDy/TokGrabber?style=for-the-badge)
-![GitHub Stars](https://img.shields.io/github/stars/xHaMMaDy/TokGrabber?style=for-the-badge)
-![License](https://img.shields.io/github/license/xHaMMaDy/TokGrabber?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/xHaMMaDy/TokGrabber?style=for-the-badge)  
+![GitHub Stars](https://img.shields.io/github/stars/xHaMMaDy/TokGrabber?style=for-the-badge)  
+![License](https://img.shields.io/github/license/xHaMMaDy/TokGrabber?style=for-the-badge)  
 
-TokGrabber is a feature-rich, modern GUI application for downloading TikTok videos, cover images, and music. Built with PyQt5 and styled with [QDarkStyleSheet](https://github.com/ColinDuquesnoy/QDarkStyleSheet), TokGrabber delivers an elegant and powerful experience for content retrieval.
+Tired of searching for ways to save TikTok videos, music, or cover images? **TokGrabber** makes it effortless! With a sleek UI powered by **PyQt5** and a stunning **QDarkStyleSheet** theme, you get a seamless experience while fetching content.  
 
-## Features ✨
+🔻 **Download videos, music, and covers—fast & easy!**  
+📂 **Keep track of your downloads with a built-in history tab!**  
+⚡ **Batch mode for when you need to grab multiple videos at once!**  
 
-- **Custom Title Bar:**  
-  - Frameless window with a sleek custom title bar featuring a TikTok logo and the name **TokGrabber**.
-  - Menu options for **Settings**, **Export Logs**, and **About** directly in the title bar.
+---
 
-- **Single Download Mode:**  
-  - Fetch video info (title, region, duration) and preview the thumbnail.
-  - Choose from Standard Video, HD Video, Cover Image, or Music.
-  - Check for file existence (prompt to overwrite if exists) with a real-time progress bar and detailed logs.
+## ✨ Features  
 
-- **Batch Download Mode:**  
-  - Download multiple TikTok videos by supplying a text file with URLs.
-  - Global progress bar tracks overall download progress.
-  - Skips already existing files and logs errors for individual URLs.
+✅ **Sleek & Modern Interface** – Custom title bar, minimal design, and a dark mode!  
+✅ **Single Download Mode** – Fetch video details, preview thumbnails, and download media effortlessly.  
+✅ **Batch Download Mode** – Bulk download TikTok content using a simple text file.  
+✅ **Download History** – View past downloads and open files directly from the app.  
+✅ **Error Handling** – Built-in retries, detailed logs, and intelligent file management.  
+✅ **Customizable Settings** – Choose output folders, adjust timeouts, and toggle logging.  
 
-- **Download History Tab:**  
-  - View a history table populated from a CSV file.
-  - Right-click on any history entry to get a "Show in Folder" option.
+---
 
-- **Robust Error Handling:**  
-  - Built-in retry logic and detailed logging for both single and batch operations.
+## 🖼️ Screenshots  
 
-- **User Settings Panel:**  
-  - Configure default output directory, network timeout, verbose logging, and theme preference via a settings dialog.
+📌 **Before Fetching Info:**  
+![Before](https://i.imgur.com/jKoerkK.png)  
 
-- **Modern Dark Theme:**  
-  - Uses QDarkStyleSheet for a stunning dark appearance (with a fallback if not installed).
+📌 **After Fetching Info:**  
+![After](https://i.imgur.com/VgLExpQ.png)  
 
-- **About Dialog:**  
-  - Provides information about the project and the creator: **Ibrahim Hammad (HaMMaDy)**.  
-  - Visit my GitHub: [https://github.com/xHaMMaDy](https://github.com/xHaMMaDy)
-  
-  ## Screenshots
+---
 
-Here are some snapshots of TokGrabber in action:
+## ⚙️ Installation  
 
-**Before Fetching Info:**
-![TokGrabber Screenshot Before](https://i.imgur.com/jKoerkK.png)
+1️⃣ **Clone the repo:**  
+```bash
+git clone https://github.com/xHaMMaDy/TokGrabber.git
+cd TokGrabber
+```  
 
-**After Fetching Info:**
-![TokGrabber Screenshot After](https://i.imgur.com/VgLExpQ.png)
+2️⃣ **Install dependencies:**  
+```bash
+pip install PyQt5 requests tqdm qdarkstyle
+```  
 
+3️⃣ **Ensure assets:**  
+Make sure `tiktok_logo.png` is in the project directory.  
 
-## Installation 🛠️
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/xHaMMaDy/TokGrabber.git
-   cd TokGrabber
-	```
-2. **Install dependencies:**
-   ```bash
-	pip install PyQt5 requests tqdm qdarkstyle
-	```
-3. **Assets:**
-	Ensure `tiktok_logo.png` is located in the project directory.
+## 🚀 How to Use  
 
-## Usage ▶️
-Run the application with:
-   ```bash
-	python TokGrabber.py```
-	
-	
-### Single Download Mode
-	- **Enter TikTok URL:** Paste a valid TikTok URL.
-	- **Fetch Info:** Retrieve video details (title, region, duration) and view the thumbnail.
-	- **Download:** Select your desired download type and output directory, then click **Download**. If the file exists, you’ll be prompted to overwrite it.
-	- **Pause/Resume:** Control the download process using the **Pause/Resume** button.
-	- **Logs & Progress:** Monitor download progress and view detailed logs in real time.
+### 🎯 Single Download Mode  
+1. **Paste a TikTok URL**  
+2. **Fetch Info** – Get video details, region, and duration.  
+3. **Choose Format** – Standard Video, HD, Cover Image, or Music.  
+4. **Download** – Watch the real-time progress bar.  
 
-### Batch Download Mode
-- **URLs File:** Provide a text file containing TikTok URLs (one per line).
-- **Download Type:** Choose the media type for all URLs.
-- **Output Directory:** Specify the output directory.
-- **Start Batch Download:** Click **Start Batch Download** to process all URLs. A global progress bar and log updates will keep you informed.
-- **Error Handling:** Invalid URLs and download errors are logged, and the process continues for remaining URLs.
+### 🎯 Batch Download Mode  
+1. **Prepare a text file** with TikTok URLs (one per line).  
+2. **Select media type** and output folder.  
+3. **Start the process** and track progress with the global bar.  
 
-### Download History Tab
-- **View History:** Browse your past downloads displayed in a table.
-- **Context Menu:** Right-click on any history entry to bring up a context menu with a **"Show in Folder"** option, which opens the folder containing the downloaded file.
-- **Refresh:** Click the **Refresh History** button to update the history view.
+### 📂 Download History  
+- View past downloads in a sortable table.  
+- Right-click entries to **“Show in Folder.”**  
+- Refresh history anytime!  
 
-## Disclaimer ⚠️
+---
 
-**TokGrabber** is provided for **educational purposes only**.  
-This project is not affiliated with, endorsed by, or approved by TikTok Inc.  
-Use of this tool to download content may violate TikTok’s Terms of Service.  
-It is the user's responsibility to ensure compliance with local laws and TikTok policies.
+## ⚠️ Disclaimer  
 
-## License 📄
+🚨 **TokGrabber is for educational purposes only.**  
+❌ We are not affiliated with TikTok Inc.  
+📜 Make sure to follow TikTok’s Terms of Service before using this tool.  
 
-This project is licensed under the [MIT License](LICENSE).
+---
 
-## Contributing 🤝
+## 🏆 Contributing  
 
-Contributions are welcome! Feel free to fork the repository and submit pull requests.  
-Please follow the guidelines outlined in our [Contributing Guide](CONTRIBUTING.md).
+Want to improve TokGrabber? PRs are welcome!  
+1️⃣ **Fork the repo**  
+2️⃣ **Make your changes**  
+3️⃣ **Submit a pull request**  
 
+---
 
-### About & Contact
-- **About TokGrabber:**  
-  Created by **Ibrahim Hammad (HaMMaDy)**.  
-  GitHub: [https://github.com/xHaMMaDy](https://github.com/xHaMMaDy)
-  
-- **Contact:**  
-  Feel free to reach out via email: [xhammady@gmail.com](mailto:xhammady@gmail.com)
+## 🔗 About & Contact  
 
-*Happy Downloading! 🎉*
+👤 **Created by:** Ibrahim Hammad (**HaMMaDy**)  
+📧 **Email:** [xhammady@gmail.com](mailto:xhammady@gmail.com)  
+🌐 **GitHub:** [xHaMMaDy](https://github.com/xHaMMaDy)  
+
+⭐ If you like this project, give it a **star**! ⭐  
+
+🎉 *Happy Downloading!* 🎉  
