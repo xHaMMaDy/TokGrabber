@@ -65,7 +65,7 @@ Here are some snapshots of TokGrabber in action:
 	Ensure `tiktok_logo.png` is located in the project directory.
 
 ## Usage ▶️
-	Run the application with:
+Run the application with:
    ```bash
 	python TokGrabber.py```
 	
