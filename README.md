@@ -65,11 +65,11 @@ Here are some snapshots of TokGrabber in action:
 	Ensure `tiktok_logo.png` is located in the project directory.
 
 ## Usage ▶️
-
 	Run the application with:
    ```bash
-	python TokGrabber.py
-	```
+	python TokGrabber.py```
+	
+	
 ### Single Download Mode
 - **Enter TikTok URL:** Paste a valid TikTok URL.
 - **Fetch Info:** Retrieve video details (title, region, duration) and view the thumbnail.
